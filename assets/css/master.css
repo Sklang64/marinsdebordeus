@@ -1,0 +1,78 @@
+body, html
+{
+  background: #fff;
+  border: 0 none;
+  margin: auto;
+}
+/*--------------------------------- Mise en forme de l'en-tête ---------------------------------*/
+header
+{
+  height: 45px;
+  padding: 15px 0;
+  background: #fff;
+  font: normal 2em / normal 'Nixie One', serif;
+  color: #ff6e6f;
+  text-align: center;
+}
+
+
+header img{
+  display: flex;
+  margin-left: 20px;
+  width: 60px;
+  text-align: left;
+}
+
+/* illustration bateaux et pont*/
+
+ #bridges {
+
+  position: absolute;
+  right : 150px;
+  top: -30px;
+}
+
+
+/*Navigation*/
+nav
+{
+  margin: 0;
+  padding: 0;
+  background: #173e72;
+  border-bottom: 3px solid #EF3F3F;
+  overflow: hidden;
+}
+
+
+nav ul
+{
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+nav ul li
+{
+  display: inline-block;
+  margin: 0 -4px;
+  padding: 5px 0;
+}
+
+
+nav ul li a
+{
+  padding: 5px 50px;
+  font: normal 1em / normal 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #EF3F3F;
+}
+
+/*--------------------------------- Mise en forme du footer ---------------------------------*/

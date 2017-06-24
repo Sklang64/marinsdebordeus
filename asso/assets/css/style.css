@@ -1,0 +1,393 @@
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+@import url(http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:700italic,400,700|Open+Sans+Condensed:300,300italic,700|Slabo+13px);
+
+
+
+body, html{
+  background: #fff;
+  border: 0 none;
+  margin: auto;
+}
+/*fonts*/
+
+h1 {
+
+  font-size: 1.5em;
+  text-align:center;
+  font-weight: lighter ;
+  margin-top: -35px;
+}
+
+h2{
+  font-size: 1.3em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+
+
+h3{
+  font-size:0.6em;
+}
+
+p{
+  font-size:16px;
+}
+
+header
+{
+  height: 45px;
+  padding: 15px 0;
+  background: #fff;
+  font: normal 2em / normal 'Nixie One', serif;
+  color: #ff6e6f;
+  text-align: center;
+}
+
+
+header img{
+  display: flex;
+  margin-left: 20px;
+  width: 60px;
+  text-align: left;
+}
+
+/* illustration bateaux et pont*/
+
+ #bridges {
+
+  position: absolute;
+  right : 150px;
+  top: -30px;
+}
+
+/* Search Bar*/
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 1px solid #173e72;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #173e72;
+}
+
+.searchTerm:focus {
+  color: #173e72;
+}
+
+.searchButton {
+  position: absolute;
+  right: -44px;
+  width: 40px;
+  height: 20px;
+  border: 1px solid #173e72;
+  background: #173e72;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.searchButton : hover {
+  background-color: #EF3F3F;
+
+}
+
+
+
+/*Redimensionner la search Bar*/
+
+.wrap {
+  width: 10%;
+  position: absolute;
+  top: 7%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/*Navigation*/
+nav
+{
+  margin: 0;
+  padding: 0;
+  background: #173e72;
+  border-bottom: 3px solid #EF3F3F;
+  overflow: hidden;
+}
+
+
+nav ul
+{
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+nav ul li
+{
+  display: inline-block;
+  margin: 0 -4px;
+  padding: 5px 0;
+}
+
+
+nav ul li a
+{
+  padding: 5px 50px;
+  font: normal 1em / normal 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #EF3F3F;
+}
+
+/*Scroll*/
+#scroll-top {
+	  position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+    text-decoration: none;
+}
+#scroll-top button {
+	  width: 80px;
+    height: 80px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    border: solid 5px #FFEBEE;
+    background-color: #11133B;
+    color: #fff;
+    box-shadow: 0 0 1px #333;
+    display: block;
+    font-family: tahoma;
+    font-size: 11px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#scroll-top button:hover {
+    background-color: #ED1B31;
+    border-color: #F44336;
+}
+
+/*Historique*/
+
+#history {
+  height: auto;
+}
+
+/* Photo premier plan */
+.picture {
+  width: 100%;
+}
+
+/* Histoire assos */
+
+#history > h1 {
+  font-family: 'Open Sans Condensed', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  margin-top: 40px;
+  width: 100%;
+  color: #737373;
+}
+
+.assos {
+  margin-top: 300px;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
+
+.asso:nth-child(2n+0){
+  background-color: #eee;
+  color:  #737373;
+  width: 50%;
+  justify-content: center;
+}
+
+.asso:nth-child(2n+1){
+  background-color: #11133B;
+  color: white;
+  width: 50%;
+  justify-content: center;
+}
+
+.asso > h2  {
+  font-family: 'Open Sans Condensed', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.asso > p  {
+  font-family: 'Open Sans Condensed', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px;
+}
+
+.asso:nth-child(2n+1) > img {
+  max-width: 100%;
+  padding-top: 70px;
+}
+
+.asso:nth-child(2n+0) > img {
+  max-width: 100%;
+  padding-top: 40px;
+}
+
+.asso > img {
+  display: block;
+  margin: auto;
+}
+
+
+/*L'équipe*/
+
+.team {
+  display: flex;
+  flex: auto;
+  max-width: 100%;
+  height: auto;
+  background-color: #eee;
+  flex-direction: column;
+}
+
+.team > h2   {
+  font-family: 'Open Sans Condensed', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 4em;
+  color: #737373;
+  text-align: center;
+}
+
+.team > .imgs  {
+  max-height: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.team > .imgs > img  {
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 50px;
+}
+
+.team > .imgs > img:hover {
+  opacity: 0.5;
+}
+
+.team > p {
+  max-height: auto;
+  text-align: center;
+  font-family: 'Open Sans Condensed', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  color: #737373;
+  margin: 10px;
+  font-style: italic;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-wrap: wrap;
+}
+
+/* Parallaxe */
+.parallax {
+  display: block;
+  height: 800px;
+  overflow: hidden;
+}
+
+.parallax .p1 {
+  background: url("BassinAFlot_2_b&w.jpg") no-repeat fixed 50% 0;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+}
+
+.parallax.p1 > h2 {
+  font-family: 'Open Sans Condensed', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) translateY(115%);
+  color: #fff;
+  border: 5px solid #fff;
+  padding: 0.2em 1em;
+  background-color: rgba(0,0,0,.2);
+  z-index: 1;
+}
+
+/* Les Bassins à Flots */
+
+.archive {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  background-color: #11133B;
+  width: 100%;
+  height: auto;
+}
+
+
+.archive > .text {
+  width: 50%;
+  margin-bottom: 150px;
+}
+
+.archive > .text > h2  {
+  font-family: 'Open Sans Condensed', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.archive > .text > p  {
+  font-family: 'Open Sans Condensed', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.archive > .photo > img {
+  max-width: 100%;
+  height: auto;
+}

@@ -5,7 +5,7 @@ body, html
   margin: auto;
 }
 
-/*------------------- Mise en place du bandeau ------------------- */
+/*------------------- Bandeau ------------------- */
 #bandeau
 {
 
@@ -29,53 +29,100 @@ body, html
   text-align: center;
 }
 
-#crea
+/*------------------- Slider Crea ------------------- */
+#container
 {
-  display: flex;
-  width: 100%;
-  height: 450px;
-  margin-top: 50px;
+  width: 600px;
+  min-width: 600px;
+  height: 400px;
+  margin-top: 70px;
+  overflow: hidden;
 }
 
-#crea .slider
+#container .items
 {
-  float: left;
   position: relative;
-  height: 550px;
-  width: 45%;
-  background-color: #EEEEEE;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-#crea .slider img
-{
-  width: 80%;
-  margin-left: 70px;
-  margin-top: 120px;
-  border-radius: 5px;
+#container .translate
+ {
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
 }
 
-#crea .contenu
+#container .item
 {
-  display: inline-block;
+  width: 600px;
+  min-width: 600px;
+  height: 400px;
+  background-color: gray;
+}
+
+#container .item:nth-child(2n+0)
+{
+  background-color: lightgray;
+}
+
+#container .item img
+{
+  width: 550px;
+}
+
+/*------------------- Contenu Crea ------------------- */
+
+#contenuCrea
+{
+  width: 50%;
   float: right;
-  margin-left: 50px;
-  width: 49%;
-  height: 550px;
-  font-size: 1.1em;
-}
+  margin-top: -350px;
 
-#crea .contenu h2
-{
-  margin-top: 50px;
-  text-align: center;
-}
+  /*------------------- Slider Mehalah ------------------- */
+  #container2
+  {
+    width: 600px;
+    min-width: 600px;
+    height: 400px;
+    margin-top: 70px;
+    overflow: hidden;
+  }
 
-#crea .contenu p
-{
-  text-align: justify;
-  font-size: 1em;
-  padding: 15px;
-  margin-top: 50px;
+  #container2 .items
+  {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 
-}
+  #container2 .translate
+   {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+  }
+
+  #container2 .item
+  {
+    width: 600px;
+    min-width: 600px;
+    height: 400px;
+    background-color: gray;
+  }
+
+  #container2 .item:nth-child(2n+0)
+  {
+    background-color: lightgray;
+  }
+
+  #container2 .item img
+  {
+    width: 550px;
+  }
